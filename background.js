@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             body: JSON.stringify({
                 i: api_key,
                 text: text,
-                visibility: request.visible ? 'public' : request.visible
+                visibility: request.visible ? request.visible : 'public'
             })
         })
         .then(response => response.json())
