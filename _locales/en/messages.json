@@ -40,5 +40,11 @@
     },
     "note_visible_followers": {
         "message": "Followers"
+    },
+    "alt_hosts": {
+        "message": "Instance"
+    },
+    "alt_visible": {
+        "message": "Visible"
     }
 }

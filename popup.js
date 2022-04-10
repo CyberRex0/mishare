@@ -61,7 +61,6 @@ window.addEventListener('load', function () {
             api_key: api_key,
             host: input_host
         }, function (result) {
-            console.log(result);
             setting_error.innerHTML = '';
             
             if (!result.success) {
@@ -97,7 +96,6 @@ window.addEventListener('load', function () {
             api_key: api_key,
             host: input_host
         }, function (result) {
-            console.log(result);
             ai_error.innerHTML = '';
             
             if (!result.success) {
@@ -144,7 +142,6 @@ window.addEventListener('load', function () {
                 text: text,
                 visible: input_visible.value
             }, function (result) {
-                console.log(result);
                 send_error.innerHTML = '';
 
                 if (!result.success) {
@@ -200,14 +197,13 @@ function loadFont() {
 function readConfig() {
     var hostCount = 0;
     host.innerHTML = '';
-    chrome.storage.local.get().then(result => {
+    chrome.storage.local.get(null, result => {
         for (var [k, v] of Object.entries(result)) {
             if (k.startsWith('host_')) {
                 var option = document.createElement('option');
                 option.value = k.substring(5);
                 option.innerHTML = k.substring(5);
                 if (k.substring(5) === last_selected_host) {
-                    console.log(result[k])
                     option.selected = true;
                     if (last_selected_visible || result[k].visible) document.getElementById('nv_' + (last_selected_visible || result[k].visible)).selected = true;
                 }
@@ -262,7 +258,11 @@ function renderI18n() {
     var elements = document.querySelectorAll('*[data-role="i18n"]');
     elements.forEach(element => {
         try {
-            element.innerHTML = chrome.i18n.getMessage(element.dataset.i18nkey);
+            if (element.dataset.i18nattr) {
+                element[element.dataset.i18nattr] = chrome.i18n.getMessage(element.dataset.i18nkey);
+            }else{
+                element.innerHTML = chrome.i18n.getMessage(element.dataset.i18nkey);
+            }
         }catch(e){
             element.innerHTML = '## INVALID TRANSLATE KEY ##';
         }

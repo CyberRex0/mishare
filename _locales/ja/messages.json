@@ -40,5 +40,11 @@
     },
     "note_visible_followers": {
         "message": "フォロワー"
+    },
+    "alt_hosts": {
+        "message": "投稿先インスタンス"
+    },
+    "alt_visible": {
+        "message": "公開範囲"
     }
 }
