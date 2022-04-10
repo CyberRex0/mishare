@@ -1,0 +1,44 @@
+{
+    "extension_description": {
+        "message": "今見ているページをMisskeyで共有します。"
+    },
+    "msg_firstrun": {
+        "message": "初期設定を行います。<br>以下にAPIキーとインスタンスのホスト名を入力してください。"
+    },
+    "label_api_key": {
+        "message": "APIキー"
+    },
+    "label_hostname": {
+        "message": "ホスト名"
+    },
+    "msg_setting_validation_error": {
+        "message": "設定の検証に失敗しました"
+    },
+    "msg_setting_not_set": {
+        "message": "初期設定が行われていません。<br>拡張機能のウィンドウを開き直してください。"
+    },
+    "title_add_instance": {
+        "message": "インスタンスを追加"
+    },
+    "button_note": {
+        "message": "ノート"
+    },
+    "button_add": {
+        "message": "追加"
+    },
+    "button_delete": {
+        "message": "削除"
+    },
+    "button_save": {
+        "message": "保存"
+    },
+    "note_visible_public": {
+        "message": "パブリック"
+    },
+    "note_visible_home": {
+        "message": "ホーム"
+    },
+    "note_visible_followers": {
+        "message": "フォロワー"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "MiShare",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "__MSG_extension_description__",
+    "default_locale": "ja",
+    "icons": {
+        "96": "icons/96.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png"
+    },
+    "action": {
+        "default_title": "",
+        "default_icon": "icons/128.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["fonts/notosans.otf"],
+            "matches": ["chrome-extension://*/*"]
+        }
+    ]
+}

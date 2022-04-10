@@ -1,0 +1,44 @@
+{
+    "extension_description": {
+        "message": "Share your watching page with others in Misskey"
+    },
+    "msg_firstrun": {
+        "message": "API Key is not set.<br>Please enter API Key below."
+    },
+    "label_api_key": {
+        "message": "API Key"
+    },
+    "label_hostname": {
+        "message": "Hostname"
+    },
+    "msg_setting_validation_error": {
+        "message": "Validation failed"
+    },
+    "msg_setting_not_set": {
+        "message": "Not configured yet.<br>Please re-open the extension and set the settings."
+    },
+    "title_add_instance": {
+        "message": "Add Instance"
+    },
+    "button_note": {
+        "message": "Note"
+    },
+    "button_add": {
+        "message": "Add"
+    },
+    "button_delete": {
+        "message": "Delete"
+    },
+    "button_save": {
+        "message": "Save"
+    },
+    "note_visible_public": {
+        "message": "Public"
+    },
+    "note_visible_home": {
+        "message": "Home"
+    },
+    "note_visible_followers": {
+        "message": "Followers"
+    }
+}
